@@ -30,7 +30,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function AppThree() {
+export default function Home() {
   const [selected, setSelected] = useState(people[1]);
   const [selected1, setSelected1] = useState(people1[1]);
   const [show, setShow] = React.useState(false);

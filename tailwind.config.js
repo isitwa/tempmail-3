@@ -8,6 +8,19 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
+  pageExtensions: [
+    "mdx",
+    "md",
+    "jsx",
+    "js",
+    "tsx",
+    "ts,page.tsx",
+    "page.ts",
+    "page.jsx",
+    "page.js",
+  ],
+
   darkMode: "media ",
   theme: {
     extend: {
@@ -56,8 +69,10 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [
+    // require("tailwind-scrollbar")
+  ],
   variants: {
-    scrollbar: ["rounded"],
+    // scrollbar: ["rounded"],
   },
 };
